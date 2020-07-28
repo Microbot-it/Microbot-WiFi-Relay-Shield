@@ -18,7 +18,7 @@
 #define out3 6
 #define out4 5
 
-class microbotWiFiShieldShield {
+class microbotWiFiRelayShield {
     public:
        // PUBLIC METHODS
        void begin();                // initialize the Motor Shield hardware
