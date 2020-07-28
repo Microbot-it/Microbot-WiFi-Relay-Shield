@@ -30,12 +30,12 @@ void setup() {
 
 void loop() {
    for(int i = 1; i < 5; i++) {
-      setRelay(i);                        // enables the relay
+      WiFiRelayShield.setRelay(i);           // enables the relay
       Serial.print("Relay ");
       Serial.print(i);
       Serial.print(": Enabled ... ");
       delay(1000);                           // wait for a second
-      unsetRelay(i);
+      WiFiRelayShield.unsetRelay(i);         // disables the relay
       Serial.println("Disabled");            // disable the relay
       delay(1000);                           // wait for a second
    }
