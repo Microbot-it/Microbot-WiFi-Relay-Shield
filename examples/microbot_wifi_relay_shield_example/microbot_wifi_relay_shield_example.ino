@@ -14,7 +14,7 @@
 #######################################################################*/
 
 
-#include <microbot_motor_shield.h>
+#include <microbot_wifi_relay_shield.h>
 #include <Wire.h>
 
 
