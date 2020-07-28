@@ -12,7 +12,7 @@
 
 
 // Initialize the Motor Shield hardware
-void microbotMotorShield::begin() {
+void microbotWiFiRelayShield::begin() {
    // initializes the digital pin as an output
    pinMode(out1, OUTPUT);
    pinMode(out2, OUTPUT);
@@ -27,7 +27,7 @@ void microbotMotorShield::begin() {
 
 
 // Set direction and speed for a specific motor channel
-void microbotMotorShield::setRelay(uint8_t ch) {
+void microbotWiFiRelayShield::setRelay(uint8_t ch) {
    switch(ch) {                    // ch parameter must be 1 to 4
       case 1:
         digitalWrite(out1, HIGH);
@@ -46,7 +46,7 @@ void microbotMotorShield::setRelay(uint8_t ch) {
 
 
 // Set direction and speed for a specific motor channel
-void microbotMotorShield::unsetRelay(uint8_t ch) {
+void microbotWiFiRelayShield::unsetRelay(uint8_t ch) {
    switch(ch) {                    // ch parameter must be 1 to 4
       case 1:
         digitalWrite(out1, LOW);
